@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongodb-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demodb
+  template:
+    metadata:
+      labels:
+        app: demodb
+    spec:
+      containers:
+        - name: demodb
+          image: toudherth/mongo:latest
+          ports:
+            - containerPort: 27017
+          env:
+            - name: DATABASE
+              value: interim
+            - name: HOST
+              value: demodb
+          volumeMounts:
+            - name: mongodb-storage
+              mountPath: /data/db
+      volumes:
+        - name: mongodb-storage
+          emptyDir: {}
+
+
+---
+
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-service
+spec:
+  selector:
+    app: demodb
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017

@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  "candidat"
+  namespace: ms
+  labels:
+    app:  "candidat"
+spec:
+  selector:
+    matchLabels:
+      app: "candidat"
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app:  "candidat"
+    spec:
+      containers:
+      - name:  "candidat"
+        image:  toudherth/candidat:1.0
+        env:
+        - name: DB_HOST
+          valueFrom:
+            configMapKeyRef:
+              name: "candidat"
+              key: DB_HOST
+        ports:
+        - containerPort:  9091
+          name:  "candidat"
+       
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: candidat
+  namespace: ms
+spec:
+  selector:
+    app: "candidat"
+  type: ClusterIP
+  ports:
+  - name: candidat
+    port: 9091 
+    targetPort: 9091
+    

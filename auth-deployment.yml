@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authentification-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authentification
+  template:
+    metadata:
+      labels:
+        app: authentification
+    spec:
+      containers:
+        - name: authentification
+          image: toudherth/authentification:1.0
+          ports:
+            - containerPort: 909         
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: authentification-service
+spec:
+  selector:
+    app: authentification
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9090
+  type: NodePort

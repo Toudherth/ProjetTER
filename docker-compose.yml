@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  eureka:
+    build: ./apiEureka
+    ports:
+      - 8761:8761
+
+  authentification:
+    build: ./authentification-service
+    ports:
+      - 9090:9090
+    environment:
+      DB_SERVER: 127.0.0.1
+      DB_PORT: 27017
+      
+  candidat:
+    build: ./candidat-service
+    ports:
+      - 9091:9091
+    environment:
+      DB_SERVER: 127.0.0.1
+      DB_PORT: 27017
+      
+  agence:
+    build: ./agence-service
+    ports:
+      - 9093:9093
+    depends_on:
+      - mongo
+      - eureka
+
+  gateway:
+    build: ./api-gateway
+    ports:
+      - 8080:8080
+    depends_on:
+      - eurek  
+
+  mongo:
+    image: mongo:latest
+    ports:
+      - 27018:27017
+    volumes:
+      - ./data:/data/db
+
+
+
+
+
+# version: "3.8"
+# services:
+#   candidat-service:
+#     build: ./candidatProjet
+#     ports:
+#       - 9091:9091
+#     environment:
+#         DB_URL: mongodb://db/vidly
+#         EUREKA_SERV: eureka
+
+#   db:
+#     image: mongo
+#     volumes:
+#       - vidly:/data/db
+#     ports:
+#       - 27017:27017
+
+#   eureka:
+#     build: ./apiEureka
+#     ports:
+#       - 8761:8761
+
+# volumes:
+#   vidly:
