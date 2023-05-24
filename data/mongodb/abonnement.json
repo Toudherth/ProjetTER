@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "645f745e3cfc1dcc9faafd3b"
+  },
+  "nomAbonnement": "Abonnement Gold",
+  "dateDebut": "2023-05-15T00:00:00.000+00:00",
+  "dateFin": "2024-05-14T00:00:00.000+00:00",
+  "type": "Premium",
+  "prix": "99.98999786376953",
+  "description": "Abonnement premium avec accès illimité à toutes les fonctionnalités."
+},{
+  "_id": {
+    "$oid": "645f797f68f8957f98aa1afc"
+  },
+  "nomAbonnement": "Abonnement Gold",
+  "dateDebut": "2023-05-15",
+  "dateFin": "2024-05-14",
+  "type": "Premium",
+  "prix": 99.98999786376953,
+  "description": "Abonnement premium avec accès illimité à toutes les fonctionnalités.",
+  "_class": "com.inter.entity.Abonnement"
+}]

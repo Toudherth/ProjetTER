@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "64460f43990e661d251bad85"
+  },
+  "username": "toudh",
+  "password": "$2y$10$efKjD9WDcyAF/4WOpKw8/eNlmywKajwviFJW98ku7LtMvNPekW63a",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460ae0990e661d251bad77"
+      }
+    }
+  ],
+  "_class": "com.projet.hello.entity.AppUser"
+},{
+  "_id": {
+    "$oid": "644613f6990e661d251bad88"
+  },
+  "username": "user4",
+  "password": "$2y$10$LK29YECRaeOHaMX2t8us0etaXO8kiABO4mHsf.Zw5Gp62MDZT.IJa",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460b21990e661d251bad79"
+      }
+    }
+  ],
+  "_class": "com.projet.hello.entity.AppUser"
+},{
+  "_id": {
+    "$oid": "64461e7040333e3d55a34a77"
+  },
+  "username": "user1",
+  "password": "$2a$10$EJ6bKW0DUjl/E1n3orPczeQvfnF6.N1bGAl6btww0s9mzH/cl9Iva",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460ae0990e661d251bad77"
+      }
+    }
+  ],
+  "_class": "com.projet.hello.entity.AppUser"
+},{
+  "_id": {
+    "$oid": "644904d0c5573e63246d3b27"
+  },
+  "username": "doe_john@gmail.com",
+  "password": "$2a$10$Qmp2Am0fQNgff.tyyyrlRuxHMbEtAnNngQJ8GjkFqo6bUUG/NnHTm",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460ae0990e661d251bad77"
+      }
+    }
+  ],
+  "_class": "com.projet.hello.entity.AppUser"
+},{
+  "_id": {
+    "$oid": "64490603c5573e63246d3b29"
+  },
+  "username": "rom_john@gmail.com",
+  "password": "$2a$10$mSjYpffcY1Xtd7VBNRlM2O6xsgwtceipRBCxZYOACgrIDQOzM9pwu",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460ae0990e661d251bad77"
+      }
+    }
+  ],
+  "_class": "com.projet.hello.entity.AppUser"
+},{
+  "_id": {
+    "$oid": "645f8177b827e518f7ade5ce"
+  },
+  "username": "agence1@gmail.com",
+  "password": "$2a$10$YAcw1k1HiuTIPT3MdWN3c.vzDbzvsTOniR1GVyJJj5wwVam50Dax.",
+  "roles": [
+    {
+      "$ref": "roles",
+      "$id": {
+        "$oid": "64460b32990e661d251bad7b"
+      }
+    }
+  ],
+  "_class": "com.inter.entity.AppUser"
+}]

@@ -1,0 +1,41 @@
+[{
+  "_id": {
+    "$oid": "645f79ac68f8957f98aa1afd"
+  },
+  "nomAgence": "Mon Agence",
+  "description": "Offre d'emploi pour un développeur Java expérimenté.",
+  "metier": "Développeur Java",
+  "periode": 6,
+  "renumeration": "5000",
+  "offres": [],
+  "abonnement": {
+    "$ref": "abonnement",
+    "$id": {
+      "$oid": "645f745e3cfc1dcc9faafd3b"
+    }
+  },
+  "_class": "com.inter.entity.Agence"
+},{
+  "_id": {
+    "$oid": "645f8177b827e518f7ade5cf"
+  },
+  "nomAgence": "Agence 1",
+  "description": "Offre d'emploi pour un développeur Java expérimenté.",
+  "metier": "Développeur Java",
+  "periode": 6,
+  "renumeration": "5000",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "645f8177b827e518f7ade5ce"
+    }
+  },
+  "offres": [],
+  "abonnement": {
+    "$ref": "abonnement",
+    "$id": {
+      "$oid": "645f745e3cfc1dcc9faafd3b"
+    }
+  },
+  "_class": "com.inter.entity.Agence"
+}]

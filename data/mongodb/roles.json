@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "64460ae0990e661d251bad77"
+  },
+  "rolename": "candidat",
+  "_class": "com.projet.hello.entity.AppRoles"
+},{
+  "_id": {
+    "$oid": "64460b21990e661d251bad79"
+  },
+  "rolename": "admin",
+  "_class": "com.projet.hello.entity.AppRoles"
+},{
+  "_id": {
+    "$oid": "64460b2c990e661d251bad7a"
+  },
+  "rolename": "employeur",
+  "_class": "com.projet.hello.entity.AppRoles"
+},{
+  "_id": {
+    "$oid": "64460b32990e661d251bad7b"
+  },
+  "rolename": "agence",
+  "_class": "com.projet.hello.entity.AppRoles"
+}]

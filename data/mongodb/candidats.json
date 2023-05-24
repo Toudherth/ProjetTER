@@ -1,0 +1,138 @@
+[{
+  "_id": {
+    "$oid": "6445acc651694d5a70c2eb8b"
+  },
+  "nomcandidat": "nom_du_candidat",
+  "prenomcandidat": "prenom_du_candidat",
+  "nationalite": "nationalite_du_candidat",
+  "datenaissance": "date_de_naissance_du_candidat",
+  "numerotel": "numero_de_telephone_du_candidat",
+  "cv": "cv_du_candidat",
+  "lettremotivation": "lettre_de_motivation_du_candidat",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "6445acc651694d5a70c2eb8a"
+    }
+  },
+  "offres": [],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "6445b36e51694d5a70c2eb8d"
+  },
+  "nomcandidat": "nom_du_candidat",
+  "prenomcandidat": "prenom_du_candidat",
+  "nationalite": "nationalite_du_candidat",
+  "datenaissance": "date_de_naissance_du_candidat",
+  "numerotel": "numero_de_telephone_du_candidat",
+  "cv": "cv_du_candidat",
+  "lettremotivation": "lettre_de_motivation_du_candidat",
+  "offres": [
+    {
+      "$ref": "offres",
+      "$id": "123"
+    }
+  ],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "6445b3ac51694d5a70c2eb8f"
+  },
+  "nomcandidat": "nom_du_candidat",
+  "prenomcandidat": "prenom_du_candidat",
+  "nationalite": "nationalite_du_candidat",
+  "datenaissance": "date_de_naissance_du_candidat",
+  "numerotel": "numero_de_telephone_du_candidat",
+  "cv": "cv_du_candidat",
+  "lettremotivation": "lettre_de_motivation_du_candidat",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "6445b3ab51694d5a70c2eb8e"
+    }
+  },
+  "offres": [],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "64460f44990e661d251bad86"
+  },
+  "nomcandidat": "nom_du_candidat",
+  "prenomcandidat": "prenom_du_candidat",
+  "nationalite": "nationalite_du_candidat",
+  "datenaissance": "date_de_naissance_du_candidat",
+  "numerotel": "numero_de_telephone_du_candidat",
+  "cv": "cv_du_candidat",
+  "lettremotivation": "lettre_de_motivation_du_candidat",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "64460f43990e661d251bad85"
+    }
+  },
+  "offres": [],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "64461e7040333e3d55a34a78"
+  },
+  "nomcandidat": "nom_du_candidat",
+  "prenomcandidat": "prenom_du_candidat",
+  "nationalite": "nationalite_du_candidat",
+  "datenaissance": "date_de_naissance_du_candidat",
+  "numerotel": "numero_de_telephone_du_candidat",
+  "cv": "cv_du_candidat",
+  "lettremotivation": "lettre_de_motivation_du_candidat",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "64461e7040333e3d55a34a77"
+    }
+  },
+  "offres": [],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "644904d0c5573e63246d3b28"
+  },
+  "nomcandidat": "Doe",
+  "prenomcandidat": "John",
+  "nationalite": "américaine",
+  "datenaissance": "01-01-1985",
+  "numerotel": "+1 555-1234-567",
+  "cv": "Mon CV",
+  "lettremotivation": "Ma lettre de motivation",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "644904d0c5573e63246d3b27"
+    }
+  },
+  "offres": [],
+  "_class": "com.projet.hello.entity.Candidats"
+},{
+  "_id": {
+    "$oid": "64490603c5573e63246d3b2a"
+  },
+  "nomcandidat": "Rom",
+  "prenomcandidat": "John",
+  "nationalite": "américaine",
+  "datenaissance": "01-01-1985",
+  "numerotel": "+1 555-1234-567",
+  "cv": "Mon CV",
+  "lettremotivation": "Ma lettre de motivation",
+  "user": {
+    "$ref": "users",
+    "$id": {
+      "$oid": "64490603c5573e63246d3b29"
+    }
+  },
+  "offres": [
+    {
+      "$ref": "offres",
+      "$id": "123"
+    }
+  ],
+  "_class": "com.projet.hello.entity.Candidats"
+}]

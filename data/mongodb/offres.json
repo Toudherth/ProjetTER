@@ -1,0 +1,10 @@
+[{
+  "_id": "123",
+  "nomoffre": "Développeur Java",
+  "metier": "Informatique",
+  "ville": "Paris",
+  "periode": "CDI",
+  "salaire": "40000€ - 50000€",
+  "candidats": [],
+  "_class": "com.projet.hello.entity.Offre"
+}]
